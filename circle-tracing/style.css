@@ -1,8 +1,8 @@
 .square{
-  width: 10vw;
+  width: 25vw;
   float: left;
   box-sizing: border-box;
-  height: 10vw;
+  height: 25vw;
   border: 2px solid red;
   position: relative;
 }

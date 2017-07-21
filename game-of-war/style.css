@@ -1,0 +1,24 @@
+#main {
+	width: 90%;
+	height: 90vh;
+	margin: 5% auto;
+	background-color: black;
+	box-sizing: border-box;
+}
+
+.playerRow {
+	margin: 5% auto;
+	width: 90%;
+	height: 40%;
+	box-sizing: border-box;
+}
+
+.player {
+	display: inline-block;
+	width: 24%;
+	height: 30vh;
+	margin: 0 auto;
+	margin-top: 20%;
+	background-color: yellow;
+	box-sizing: border-box;
+}
