@@ -25,11 +25,57 @@
 	<button>0</button>
 </div>
 </body>
-	<script>
-		$("#phoneNumbers>button").on('click',handleNumberPress);
-		function handleNumberPress(){
-			var buttonPressed = $(this).text();
-			responsiveVoice.speak("you pressed "+buttonPressed);
+
+<script>
+	$("#phoneNumbers>button").on('click',handleNumberPress);
+	
+	function handleNumberPress(){
+		var key = $(this).text();
+		console.log('pressing');
+		Speak(key);
+	}
+
+	function Speak(key){
+		var text;
+		switch(key) {
+			case '1': 
+				text = 'Press 1 to lose your nuts';
+				break;
+			case '2': 
+				text = 'Press 2 to go dumb';
+				break;
+			case '3': 
+				text = 'Press 3 if you think Brian is a cave-man...heehee';
+				break;
+			case '4': 
+				text = 'Press 4 for Car Rentals';
+				break;
+			case '5': 
+				text = 'Press 5 for ..........Hi';
+				break;
+			case '6':
+				text = 'Press 6 to shit yourself';
+				break;
+			case '7': 
+				text = 'Press 7 for hookers';
+				break;
+			case '8': 
+				text = 'Press 8 for a lucky night';
+				break;
+			case '9': 
+				text = 'Press 9 for grocery stores';
+				break;
+			case '0': 
+				text = 'Press 0 to repeat the options';
+				break;
+			default:
+				text = 'Choose a fucking number';
+				break;
 		}
-	</script>
+		responsiveVoice.speak(text);
+	}
+
+
+
+</script>
 </html>
