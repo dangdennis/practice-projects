@@ -61,13 +61,13 @@ function App() {
 	this.dealCards = function() {
 		for (player in playerDeck) {
 			var deck_section = deck.splice(0, 13);
-			playerDeck[player].push(deck_section);
+			playerDeck[player] = [...deck_section];
 		}
 	};
 
 	this.playCard = function() {
 		for (player in playerDeck) {
-			var card = playerDeck[player][0].pop();
+			var card = playerDeck[player].pop();
 			playingField.push(card);
 			console.log(`${player}`, 'playerDeck[player]', playerDeck[player]);
 			// check card with any current card (playingField))
@@ -76,6 +76,7 @@ function App() {
 		var maxIndex = this.findHighestCard(playingField);
 		this.givePlayerCards(maxIndex);
 		console.log('playingfield', playingField);
+		playingField = [];
 		this.showHands();
 	};
 
@@ -93,7 +94,7 @@ function App() {
 
 	this.givePlayerCards = function(index) {
 		var player = `player${index}`;
-		playerDeck[player] = [...playerDeck[player][0], ...playingField];
+		playerDeck[player] = [...playerDeck[player], ...playingField];
 	};
 }
 
