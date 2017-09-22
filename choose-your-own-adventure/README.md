@@ -1,0 +1,21 @@
+### create a "choose your own rpg adventure"
+- generate a character with stats, such as 
+  - qualities: 
+    - strength : how strong the character is
+    - dexterity : how dextrous the character is
+    - intelligence : how smart the character is
+  - gold: starts at 0
+  - hitpoints: starts at 20
+  
+- make a series of adventure objects. 
+  - has a base text to tell the user what is happening
+  - has a series of choices that can be made
+  - has some choices that can only be made if the character has the appropriate stat at a high enough level
+  - some choices result in one or more of the following: 
+    - damage to the player
+    - healing to the player
+    - gold earned by the player
+    - increase in stat
+    - decrease in stat
+    - decrease in gold by the player.  If the player doesn't have enough, another effect might happen
+  - if the player gets below 0 hitpoints, they die and the game ends

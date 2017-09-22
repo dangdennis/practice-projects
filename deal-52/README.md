@@ -8,6 +8,8 @@
 
 - Have the players play 15 rounds
     - Each player will discard the playable cards into the discard pile
+    - After the player discards, they draw the same number of cards from the draw pile
     - If the deck of drawable cards are empty recycle the discard pile into the deck of cards
     
-- The player with the least amount of cards in their hand wins
+- The player with the lowest total point value of cards in their hand wins
+    - Feel free to come up with your own scoring system

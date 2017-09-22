@@ -1,0 +1,4 @@
+- Include all tarot cards from a standard tarot deck
+- each card will generate a number of random phrases ala madlibs.
+- Include a list of people, nouns, verbs, adjectives, etc to fill the mad libs.
+- based upon the cards selected, generate random sentences and string them together for a fortune reading.
